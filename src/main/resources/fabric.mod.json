@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "hotbarfade",
+  "version": "${version}",
+  "name": "Hotbar Fade on Zoom",
+  "description": "Fades the hotbar out while zooming (with Zoomify or any other zoom mod) and fades it back in when you stop zooming.",
+  "authors": ["you"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.hotbarfade.HotbarFadeMod"
+    ]
+  },
+  "mixins": [
+    "hotbarfade.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "fabric-api": "*"
+  }
+}
